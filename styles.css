@@ -1,0 +1,219 @@
+
+*{
+    font-size: 18px;
+    font-weight: 500;
+   margin: 0px;
+   padding: 0px;
+   font-family: 'El Messiri', sans-serif;
+}
+
+body{
+    background: radial-gradient(ellipse,rgb(153, 32, 32),rgb(0, 92, 92),rgb(53, 3, 117));
+    
+    color:white;
+    }
+/* Nav Bar */
+
+nav{
+    background-color: white;
+    position: center;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+}
+#menu{
+    display: none;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    padding: 0px;
+}
+nav ul li a{
+    font-size: 20px;
+    font-weight: 600px;
+    color: teal;
+
+}
+a{
+    text-decoration: none;
+}
+.con{
+    display: flex;
+    /* height: fit-content; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    /* z-index: -1; */
+}
+.con:before{
+    opacity: 0.9;
+}
+h4{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border-color: teal;
+    border-left: 6px solid white;
+    border-right: 6px solid white;
+    border-bottom: 3px solid teal;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 150px;
+}
+mark{
+    background-color: white;
+    margin:2px;
+    padding:2px; 
+    border-radius: 8px;
+}
+.box{
+   
+    text-align: center;
+    padding: 1px;
+    /* margin-top: 50px; */
+    /* background: linear-gradient(120deg,teal,rgba(255, 166, 0, 0.863)); */
+    width: 100%;
+    z-index: -1;
+     /* border: none;
+    box-shadow: 1px 2px 4px 3px white; */
+    /* background-image: url(https://drive.google.com/thumbnail?id=10YpVJay6kT0RQvkA4IPxHKTuktLsyM60);  */
+       
+    }
+    #Home, #About #Knowledge,#contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        margin: 30px;
+        overflow: hidden;
+    }
+
+    img{
+        width: 50%;
+        height: auto;
+        border: 10px solid teal;
+        border-radius: 50% 50% 10% 10%;
+    }
+    #about ul li{
+        list-style-type: none;
+        padding: 10px;
+        display: block;
+    }
+    progress{
+        border-radius: 9px;
+        width:200px;
+        height: 20px;
+        margin-left: -10px;
+        /* box-shadow: 1px 1px 2px 1px silver; */
+    }
+    progress::-webkit-progress-bar{
+        background-color: white;
+        border-radius: 7px;
+    }
+    progress::-webkit-progress-value{
+        background-color: teal;
+        border-radius: 7px;
+        box-shadow: 1px 1px 2px 1px gray;
+    }
+    #contact{
+        display: flex;  
+        flex-direction: column; 
+     
+     }
+     input, textarea{
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid teal;
+        border-radius: 5px;
+      
+    }
+    #contact button{
+        border: 1px solid white;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            background-color: teal;
+            color: white;
+    }
+    .foot{
+        /* background-color: rgba(255, 166, 0, 0.863); */
+        background-color: teal;
+        color: rgba(255, 255, 255, 0.966);
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+        padding: 3px;
+    }
+    
+    .foot a{
+        color:rgb(1, 100, 100);
+        text-decoration: none;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 1px;
+        margin: 2px;
+    }
+    
+    /* 430 and above bar is centered and fully shown */
+    @media(max-width:430px){
+        nav{ 
+            /* /* position: fixed; */
+            display: inline; 
+            /* height: 45px; */
+            background-color: teal;
+        /* display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        }
+        
+        /* #menuc{
+            min-width: 150px;
+            padding: 10px;
+        display: none;
+        position: absolute;
+        z-index: 1;   
+    } */
+    
+        #menu{
+            /* width: 100px; */
+            border: 1px solid teal;
+            border-radius: 5px;
+            padding: 5px;
+            color: color;
+            display: inline;
+        }
+    
+        /* nav:hover #menuc{
+            display: block;
+        } */
+        
+        .con{
+            margin-top: 10px;
+        }
+        
+      h4{
+          margin: 40px;
+    
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        } 
+        input, textarea{
+            padding: 5px;
+            margin: 3px;
+          
+        }
+    }
+    
+    @media (min-width:400px)
+    {
+    h4{
+        margin: 80px;
+    }
